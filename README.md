@@ -5,5 +5,5 @@ gtfobin checker
 checks a list of binaries against grtfobins.github.io
 
 # usage
-paste a list of binaries into binaries-list.txt
+paste a list of binaries into binaries.txt
 ./gtfo.sh
