@@ -29,15 +29,15 @@ $ cat binaries.txt
 /usr/sbin/docker
 
 $ ./gtfo.sh binaries.txt 
-less:shell
-less:file-write
-less:file-read
-less:suid
-less:sudo
-mount:sudo
-docker:shell
-docker:file-write
 docker:file-read
-docker:suid
+docker:file-write
+docker:shell
 docker:sudo
+docker:suid
+less:file-read
+less:file-write
+less:shell
+less:sudo
+less:suid
+mount:sudo
 ```
