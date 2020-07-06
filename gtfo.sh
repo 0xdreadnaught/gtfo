@@ -3,7 +3,7 @@
 # gtfo.sh
 #
 # Check gtfobins for privesc opportunities
-# Version: 2.1
+# Version: 2.2
 
 if [ $# -ne 1 ]; then
     echo "ERROR: List of binaries required"
