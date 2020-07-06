@@ -3,7 +3,10 @@
 # gtfo.sh
 #
 # Check gtfobins for privesc opportunities
-# Version: 2.2
+# Version: 2.3
+
+GREEN='\033[0;32m'
+NC='\033[0m'
 
 if [ $# -ne 1 ]; then
     echo "ERROR: List of binaries required"
@@ -22,9 +25,9 @@ do
 	do
 		if [[ "$gtfobin" == "$bin:"* ]]; then
 			binary=$(echo "$gtfobin" | sed 's/:/ /g' | awk '{print $1}')
-			results+="$gtfobin - https://gtfobins.github.io/gtfobins/$binary/\n"
+			results+="${GREEN}$gtfobin${NC} - https://gtfobins.github.io/gtfobins/$binary/\n"
 		fi
 	done
 done
 
-echo -e "${results[*]}" | sort | tail -n +2
+printf "${results[*]}" | sort | tail -n +2
