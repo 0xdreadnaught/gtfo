@@ -21,9 +21,10 @@ do
 	for gtfobin in "${gtfobins[@]}"
 	do
 		if [[ "$gtfobin" == "$bin:"* ]]; then
-			results+=($gtfobin)
+			binary=$(echo "$gtfobin" | sed 's/:/ /g' | awk '{print $1}')
+			results+="$gtfobin - https://gtfobins.github.io/gtfobins/$binary/\n"
 		fi
 	done
 done
 
-echo "${results[*]}" | tr " " "\n" | sort
+echo -e "${results[*]}" | sort | tail -n +2
