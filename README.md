@@ -29,15 +29,17 @@ $ cat binaries.txt
 /usr/sbin/docker
 
 $ ./gtfo.sh binaries.txt 
-docker:file-read
-docker:file-write
-docker:shell
-docker:sudo
-docker:suid
-less:file-read
-less:file-write
-less:shell
-less:sudo
-less:suid
-mount:sudo
+docker:file-read - https://gtfobins.github.io/gtfobins/docker/
+docker:file-write - https://gtfobins.github.io/gtfobins/docker/
+docker:shell - https://gtfobins.github.io/gtfobins/docker/
+docker:sudo - https://gtfobins.github.io/gtfobins/docker/
+docker:suid - https://gtfobins.github.io/gtfobins/docker/
+less:file-read - https://gtfobins.github.io/gtfobins/less/
+less:file-write - https://gtfobins.github.io/gtfobins/less/
+less:shell - https://gtfobins.github.io/gtfobins/less/
+less:sudo - https://gtfobins.github.io/gtfobins/less/
+less:suid - https://gtfobins.github.io/gtfobins/less/
+mount:sudo - https://gtfobins.github.io/gtfobins/mount/
+pkexec:sudo - https://gtfobins.github.io/gtfobins/pkexec/
+su:sudo - https://gtfobins.github.io/gtfobins/su/
 ```
